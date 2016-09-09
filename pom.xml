@@ -4,8 +4,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sedion.mynawang</groupId>
   <artifactId>Interview-Skills-Learning</artifactId>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>Interview01-JavaBasic</module>
+  </modules>
 
   <name>Interview-Skills-Learning Maven Webapp</name>
   <url>http://maven.apache.org</url>
