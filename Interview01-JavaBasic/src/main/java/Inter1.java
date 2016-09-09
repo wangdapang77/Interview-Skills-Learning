@@ -14,4 +14,5 @@ public class Inter1 {
         System.out.println("i+++i+++i++: " + (i+++i+++i++));
         System.out.println("i: " + (i));
     }
+    // 执行
 }
