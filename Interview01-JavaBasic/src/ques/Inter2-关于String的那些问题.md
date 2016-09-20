@@ -46,16 +46,32 @@ StringBuilder是JDK 1.5中引入的，它和StringBuffer的方法完全相同，
 
 面试题目2：下面也是一个面试题，问程序的输出，看看自己能不能说出正确答案。
 ```
-public class StringEqualTest {
-    public static void main(String[] args) {
-        String a = "Programming";
-        String b = new String("Programming");
-        String c = "Program" + "ming";
-        System.out.println(a == b);
-        System.out.println(a == c);
-        System.out.println(a.equals(b));
-        System.out.println(a.equals(c));
-        System.out.println(a.intern() == b.intern());
+    public void compareEqual() {
+        String a0 = "mynawang";
+        String a = "mynawang";
+        String b = new String("mynawang");
+        String c = "myna" + "wang";
+        System.out.println(a0 == a);
+        System.out.println(a0 == b);
+        System.out.println(a0 == c);
+        System.out.println(a0.equals(b));
+        System.out.println(a0.equals(c));
+        System.out.println(a0.intern() == b.intern());
     }
-}
+
+true
+false
+true
+true
+true
+true
 ```
+上述代码在《Java程序性能优化》p67有总结到，如图：  
+![String实例化][1]
+
+
+
+
+
+
+[1]:http://7xkst6.com1.z0.glb.clouddn.com/String%E5%AE%9E%E4%BE%8B%E5%8C%96.png

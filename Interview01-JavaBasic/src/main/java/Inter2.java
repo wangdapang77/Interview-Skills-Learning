@@ -9,14 +9,25 @@ public class Inter2 {
 
     @Test
     public void compareEqual() {
+        // 编译期能确定
+        String a0 = "mynawang";
+        // 编译期能确定
         String a = "mynawang";
+        // 编译期不能确定，运行时重新实例化
         String b = new String("mynawang");
+        // 编译期能确定
         String c = "myna" + "wang";
-        System.out.println(a == b);
-        System.out.println(a == c);
-        System.out.println(a.equals(b));
-        System.out.println(a.equals(c));
-        System.out.println(a.intern() == b.intern());
+        // http://blog.csdn.net/liucheng2009/article/details/6656940
+        // 以上四个变量都指向常量池内的"mynawang"
+
+        System.out.println(a0 == a);
+        System.out.println(a0 == b);
+        System.out.println(a0 == c);
+        System.out.println(a0.equals(b));
+        System.out.println(a0.equals(c));
+        System.out.println(a0.intern() == b.intern());
     }
+
+
 
 }
