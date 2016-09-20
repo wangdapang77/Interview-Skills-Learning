@@ -30,12 +30,20 @@ final修饰的变量是引用类型时：指引用不能更改，引用指向的
 
 Q2：老生常谈的String 和StringBuilder、StringBuffer的区别？
 --------------------------------
-A2：Java 平台提供了两种类型的字符串：String和StringBuffer / StringBuilder，它们可以储存和操作字符串。
-其中String是只读字符串，也就意味着String引用的字符串内容是不能被改变的。而StringBuffer和StringBuilder
-类表示的字符串对象可以直接进行修改。StringBuilder是JDK 1.5中引入的，它和StringBuffer的方法完全相同，
-区别在于它是在单线程环境下使用的，因为它的所有方面都没有被synchronized修饰，因此它的效率也比StringBuffer略高。
+A2：Java平台提供了两种类型的字符串：String和StringBuffer / StringBuilder，它们可以储存和操作字符串。
+
+其中String是只读字符串，也就意味着String引用的字符串内容是不能被改变的。
+
+而StringBuffer和StringBuilder 类表示的字符串对象可以直接进行修改。
+
+StringBuilder是JDK 1.5中引入的，它和StringBuffer的方法完全相同，区别在于它是在单线程环境下使用的，
+
+因为它的所有方面都没有被synchronized修饰，因此它的效率也比StringBuffer略高。
+
 面试题目1：有一个面试题问：有没有哪种情况用+做字符串连接比调用StringBuffer / StringBuilder对象的append方法性能更好？
-如果连接后得到的字符串在静态存储区中是早已存在的，那么用+做字符串连接是优于StringBuffer / StringBuilder的append方法的。
+
+如果连接后得到的字符串在静态存储区中是早已存在的（如常量的拼接），那么用+做字符串连接是优于StringBuffer / StringBuilder的append方法的。
+
 面试题目2：下面也是一个面试题，问程序的输出，看看自己能不能说出正确答案。
 ```
 public class StringEqualTest {
