@@ -79,7 +79,7 @@ true
 
 而equals比较的是两个对象的值是否相等
 
-关于intern分析，请访问：[http://mynawang.top/2016/06/08/String%E4%B8%AD%E7%9A%84intern%E5%88%86%E6%9E%90/][2]
+关于intern分析，请访问：[http://mynawang.top/2016/06/08/String中的intern分析/][2]
 
 
 
