@@ -77,6 +77,12 @@ true
 
 被存储在运行时常量池（当然只保存了一份）
 
+而equals比较的是两个对象的值是否相等
+
+关于intern分析，请访问：[http://mynawang.top/2016/06/08/String%E4%B8%AD%E7%9A%84intern%E5%88%86%E6%9E%90/][2]
+
+
 
 
 [1]:http://7xkst6.com1.z0.glb.clouddn.com/String%E5%AE%9E%E4%BE%8B%E5%8C%96.png
+[2]:http://mynawang.top/2016/06/08/String%E4%B8%AD%E7%9A%84intern%E5%88%86%E6%9E%90/
