@@ -8,6 +8,7 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>Interview01-JavaBasic</module>
+    <module>Interview02-Thread</module>
   </modules>
 
   <name>Interview-Skills-Learning Maven Webapp</name>
